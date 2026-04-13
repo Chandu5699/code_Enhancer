@@ -46,7 +46,7 @@ logger = logging.getLogger(__name__)
 # Initialize the app first
 app = Flask(__name__, template_folder='templates')
 app.secret_key = os.getenv('SECRET_KEY', os.urandom(24))
-app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024  # 1MB max-limit
+app.config['MAX_CONTENT_Length'] = 1 * 1024 * 1024  # 1MB max-limit
 app.config['MAX_CACHE_SIZE'] = 1000  # 1000 questions in cache
 app.config['CACHE_TTL'] = 3600  # 1 hour TTL
 app.config['PERMANENT_SESSION_LIFETIME'] = 1800  # 30 minutes
